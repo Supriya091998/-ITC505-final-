@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><b>5x5 Lights Out - Revenge of Lights Out</b></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="instructions">
+            <h2>Game Instructions</h2>
+            <p>1. The grid consists of lights (white = ON, blue = OFF).</p>
+            <p>2. Click a cell to toggle it and its adjacent neighbors.</p>
+            <p>3. Turn all lights ON to win the game.</p>
+            <p>4. Each game starts with a random solvable configuration.</p>
+            <p>Good luck, and have fun!</p>
+        </div>
+
+        <div class="game-container">
+            <h1><b>5x5 Lights Out - Revenge of Lights Out</b></h1>
+            <p>Click on a cell to toggle it and its neighbors. Turn ON all the lights to win!</p>
+            <div id="stats">
+                <p><strong>Target:</strong> Turn ON all lights</p>
+                <p><strong>Moves:</strong> <span id="moveCount">0</span></p>
+                <p><strong>Time Taken:</strong> <span id="timeElapsed">0</span>s</p>
+            </div>
+            <div id="grid"></div>
+            <button id="restartButton">Restart Game</button>
+        </div>
+
+        <div class="tutorial">
+            <h2>Game Tutorial</h2>
+            <p>The goal of <strong>Lights Out</strong> is to turn ON all the lights on the grid.</p>
+            <p>Clicking a light toggles its state and the state of its immediate neighbors.</p>
+            <p>If all lights are turned ON, you win!</p>
+            <p>Remember: A blue cell means the light is OFF, and a white cell means the light is ON.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+        <div class="addendum">
+            <h3>Addendum</h3>
+            <p>
+                <p>This game, <b> Lights Out </b>, developed by <b>Supriya Singarapu</b>, is an engaging project that leverages HTML, CSS, and JavaScript to create an interactive and enjoyable user experience. The primary challenge in developing this game was ensuring the initial board configuration was both random and solvable. To achieve this, the program applies a sequence of random toggles to an empty grid, ensuring that the resulting configuration maintains solvability. By doing so, players can enjoy a fair and unpredictable start to each game.</p>
+
+<p>Dynamic styling played a crucial role in enhancing user engagement. The color transitions between ON (white) and OFF (blue) states are visually clear, ensuring users can easily distinguish between active and inactive cells. Event handling was another vital aspect, as clicking any cell toggles its state and that of its neighbors. This interactivity showcases the power of JavaScript's DOM manipulation and event listeners.</p>
+
+<p>Additional features, such as tracking the number of moves, elapsed time, and displaying a congratulatory message upon winning, were implemented to make the game more rewarding and competitive. The personalized touch—addressing players by their names and celebrating their achievements—adds an element of delight and encouragement.</p>
+
+<p>This project also provided valuable experience in debugging logical errors, particularly when handling random board initialization. Moreover, integrating a responsive and user-friendly design reinforced the importance of clear instructions and accessible interfaces. </p>
+
+<p>Overall, the Lights Out game exemplifies the synergy of front-end web technologies to create an interactive, educational, and entertaining application. This project deepened my understanding of grid-based algorithms, state management, and user-centric design principles, preparing me for more advanced challenges in web development. </p>       
+  </p>
+        </div>
+    </footer>
+    <script>
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

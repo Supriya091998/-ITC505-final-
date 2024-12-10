@@ -1,0 +1,105 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f7faff;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2a5298;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.instructions, .tutorial {
+    width: 20%;
+    background-color: #e3f2fd;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.game-container {
+    width: 50%;
+    text-align: center;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(5, 70px);
+    gap: 8px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border: 2px solid #2a5298;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cell.is-off {
+    background-color: #2a5298;
+}
+
+footer {
+    background-color: #2a5298;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer .addendum {
+    margin-top: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+p {
+    margin: 8px 0;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+#stats {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+#restartButton {
+    background-color: #2a5298;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#restartButton:hover {
+    background-color: #1e3f73;
+}
+.hidden {
+    display: none;
+}
+
+.welcome-screen {
+    text-align: center;
+    padding: 20px;
+}
+
